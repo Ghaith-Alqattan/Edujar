@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.courses {
+  margin-top: 100px;
+}
+.courses .container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.courses .container .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.courses .container .heading .arrows {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.courses .container .heading .arrows .c-left-arrow,
+.c-right-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #364c65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses .container .heading .arrows img {
+  width: 6px;
+  color: #f2f2f2;
+}
+.courses .container .heading .arrows .c-left-arrow img {
+  transform: rotate(180deg);
+}
+.courses .container .text h1 {
+  font-family: KoHo;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  line-height: 54.6px;
+}
+.courses .container .text p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #d9ecff;
+  padding-top: 10px;
+}
+.courses .container .cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.courses .container .card {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 378px;
+  border-radius: 30px;
+  border: 2px solid #3d4e64;
+  opacity: 0px;
+  background: #20344a;
+}
+
+.courses .container .card .top {
+  font-family: Poppins;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses .container .card .top .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #d9ecff;
+}
+.courses .container .card .top .title img {
+  width: 26px;
+}
+.courses .container .card .top .course-type {
+  text-align: center;
+  padding: 5px 30px;
+  color: white;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.courses .container .card .content {
+  margin-top: 25px;
+}
+.courses .container .card .content h3 {
+  font-family: KoHo;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #d9ecff;
+}
+
+.courses .container .card .content p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #7b92ac;
+  margin-top: 20px;
+}
+.courses .container .card .content hr {
+  border: 1px solid #dadaf74d;
+  margin: 30px 0;
+}
+.courses .container .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.courses .container .card .bottom .btn {
+  position: relative;
+  border: none;
+  padding: 5px 45px;
+  gap: 8px;
+  border-radius: 40px;
+  background: #21b573;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+  color: wheat;
+  transition: all 0.7s ease-in-out;
+}
+.courses .container .card .bottom .btn::before {
+  content: 'try!';
+  position: absolute;
+  left: 15px;
+  z-index: -1;
+  color: #20344a;
+}
+.courses .container .card .bottom .btn:hover {
+  transform: translateX(30px);
+}
+.courses .container .card .bottom .course-pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .courses .container .heading .arrows .c-left-arrow,
+  .c-right-arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .courses .container .heading {
+    display: flex;
+    justify-content: center;
+  }
+  .courses .container .text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .courses .container .text p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .courses .container .card .content h3 {
+    font-size: 18px;
+  }
+
+  .courses .container .card .content p {
+    font-size: 12px;
+  }
+  .courses .container .card .top .course-type {
+    padding: 5px 30px;
+  }
+  .courses .container .heading .arrows {
+    display: none;
+  }
+  .courses .container .cards {
+    justify-content: center;
+  }
+}
+.explore-courses {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore-courses p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  color: white;
+  transition: 0.6s all ease-in-out;
+}
+.explore-courses p:hover {
+  background-color: #21b573;
+}

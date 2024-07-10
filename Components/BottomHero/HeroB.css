@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  box-sizing: border-box;
+}
+.HeroB .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.HeroB .items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #d6ffc2;
+  padding: 20px;
+  width: 100vw;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.HeroB .items li .top {
+  display: flex;
+  flex: 1;
+  position: relative;
+  font-family: KoHo;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: center;
+}
+.HeroB .items li .top .special-star {
+  width: 47.57px;
+}
+.HeroB .items li .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.HeroB .items li .bottom .star-2 {
+  width: 20px;
+}
+.HeroB .items li .bottom p {
+  font-size: 20px;
+}
+.HeroB .items li:nth-child(3) .bottom p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+.HeroB .items li:nth-child(even) {
+  background-color: #21b573;
+}
+.HeroB .items li:nth-child(odd) {
+  background-color: #364c65;
+}
+@media screen and (max-width: 992px) {
+  .HeroB .items {
+    flex-wrap: wrap;
+  }
+  .HeroB .items li {
+    width: 50%;
+  }
+  .HeroB .items li:nth-child(3) {
+    width: 100%;
+  }
+}

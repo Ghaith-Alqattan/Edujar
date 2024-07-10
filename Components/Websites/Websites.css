@@ -1,0 +1,27 @@
+.Websites {
+  margin-top: 100px;
+}
+.Websites .container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Websites .container .left-arrow {
+  transform: rotate(180deg);
+}
+.Websites .container .web-slider {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+}
+@media screen and (max-width: 992px) {
+  .Websites .container .web-slider {
+    overflow: scroll;
+    gap: 60px;
+    width: 100%;
+  }
+}

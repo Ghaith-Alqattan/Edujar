@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hero .container {
+  position: relative;
+  width: 90vw;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.hero .container .middle-section .hero-title {
+  font-family: 'KoHo', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  color: #d6ffc2;
+  text-align: center;
+}
+.hero .container .middle-section .heroSpan {
+  position: relative;
+  color: #efa02a;
+}
+.heroSpan::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-top: #efa02a 7px solid;
+  border-radius: 15%;
+  position: absolute;
+  top: 90%;
+  transform: rotate(-5deg);
+}
+
+.hero .container .middle-section .para {
+  width: 80%;
+  color: #d6ffc2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 18px;
+  margin: 50px auto;
+  text-align: center;
+}
+.hero .container .middle-section .hero-form {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container .middle-section .hero-form .heroSearch {
+  color: #d9ecff;
+  width: 100%;
+  background-color: #3d4e64;
+  border: none;
+  padding: 20px 10px;
+  border-radius: 30px;
+  outline: none;
+}
+.heroSearch::placeholder {
+  color: #d9ecff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: italic;
+  font-size: 16px;
+}
+.hero .container .middle-section .hero-form .heroSearchButton {
+  cursor: pointer;
+  color: #364c65;
+  height: 90%;
+  background-color: #fab437;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  right: 5px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+}
+@media screen and (max-width: 992px) {
+  .man-on-chair {
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+  }
+  .laptopGirl {
+    width: 125px;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    right: -20px;
+  }
+  .hero .container .middle-section .hero-title {
+    font-size: 25px;
+  }
+  .hero .container .middle-section .para {
+    font-size: 14px;
+  }
+  .hero .container .middle-section .hero-form {
+    width: 75%;
+  }
+  .heroSearch::placeholder {
+    font-size: 10px;
+  }
+  .hero .container .middle-section .hero-form .heroSearchButton {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+  .hero .container {
+    margin-top: 50px;
+  }
+}

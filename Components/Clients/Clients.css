@@ -1,0 +1,103 @@
+.clients {
+  margin-top: 200px;
+}
+.clients .container {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 66px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url(../../public/img/png/slider\ bg.png);
+  border-radius: 35px;
+}
+.standing-girl {
+  width: 314px;
+  position: absolute;
+  top: -61%;
+  z-index: -1;
+}
+.clients .container .title {
+  font-family: KoHo;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.clients .container .colons {
+  margin-bottom: 40px;
+}
+.clients .container .para {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #e1efff;
+  padding-bottom: 40px;
+}
+.clients .container .clients-info .left-arrow {
+  transform: rotate(180deg);
+}
+.clients .container .clients-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients .container .clients-info .client-name {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+}
+.clients-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.clients .container .clients-info .clientsPics {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.clientsPics li {
+  transition: 0.5s all ease;
+}
+.clientsPics li:hover {
+  filter: brightness(0.7);
+}
+@media screen and (max-width: 992px) {
+  .standing-girl {
+    display: none;
+  }
+  .clients-slider {
+    width: 100%;
+  }
+  .clients .container .title {
+    font-size: 35px;
+  }
+  .clients .container .colons {
+    width: 40px;
+  }
+  .clients .container .para {
+    font-size: 13px;
+  }
+  .clients .container .clients-info .client-name {
+    font-size: 17px;
+  }
+  .clients-slider {
+    overflow-x: hidden;
+    overflow: scroll;
+    width: 70%;
+  }
+}
