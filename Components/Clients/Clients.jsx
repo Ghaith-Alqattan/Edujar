@@ -3,11 +3,13 @@ import "./Clients.css"
 import arrow from "../../public/img/svg/arrow.svg"
 import specialColon from "../../public/img/svg/specialColons.svg"
 import standingGirl from "../../public/img/png/girl standing.png"
+import BG from "../../public/img/png/slider bg.png"
 export default function Clients({ title, para, clientName, clientsPics }) {
     return (
         <>
             <div className="clients">
                 <div className="container">
+                    <img src={BG} alt="" className="clientsBG" />
                     <img src={standingGirl} alt="" className="standing-girl" />
                     <div className="content-container">
                         <h1 className="title">{title}</h1>

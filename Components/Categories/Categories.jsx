@@ -1,5 +1,6 @@
 import React from 'react'
 import Arrow from "../../public/img/svg/another shaped arrow.svg"
+import BG from "../../public/img/png/slider bg.png"
 import "./Categories.css"
 export default function Categories({ categories }) {
     return (
@@ -12,6 +13,7 @@ export default function Categories({ categories }) {
                     </div>
                 </div>
                 <div className="categories-slider">
+                    <img src={BG} alt="" className="categoriesBG" />
                     <div className="cat-slider-container">
                         <img className='left-arrow' src={Arrow} alt="" />
                         <ul className="cat-items" >
